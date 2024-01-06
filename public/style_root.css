@@ -1,0 +1,21 @@
+h1{
+    color:blueviolet;
+}
+
+button{
+    height:100px;
+    width:200px;
+    background-color: PINK;
+    color:black;
+    font-weight: bolder;
+    border-color: pink;
+}
+
+button:hover{
+    background-color: purple;
+    color:aliceblue;
+}
+
+div{
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+*{
+    text-align: center;
+    background-color: blueviolet;
+    color:white;
+}
+
+
+button{
+    
+  
+    background-color: rebeccapurple;
+    padding:10px;
+    color:white;
+
+}
+
+button:hover{
+    background-color: white;
+    color:blueviolet;
+} 
+
+
+textarea{
+    width:400px;
+    height:200px;
+    border:2px solid white;
+    color:white;
+}

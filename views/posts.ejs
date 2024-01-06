@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL posts</title>
+    <link rel="stylesheet" href="style_posts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1> ALL POSTS ON INSTRAGRAM </h1>
+    <a href="http://localhost:8080/posts/new"> CREAT A NEW POST !</a>
+    
+
+
+         <% for(post of posts){ %>
+            <div class="main">
+                post_id:<%=post.id%>
+                <a href="http://localhost:8080/post/<%=post.id%>/delete" class="delete"><i class="fa-solid fa-trash-can"></i></a>
+            
+                <div class="user">
+                <h3>username : @<%=post.name%></h3>
+                <br>
+                <%=post.content%>
+                </div>
+                <div class="info">
+                    <a href="http://localhost:8080/posts/<%=post.id%>/edit">edit</a>
+                    <div class="foll"><h4>follower</h4> <%=post.followers%></div>
+                    <div class="foll"><h4>followings</h4> <%=post.following%></div>
+                </div>
+            </div>
+        
+        <% } %>
+    
+</body>
+</html>

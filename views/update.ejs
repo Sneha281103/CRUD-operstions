@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update route</title>
+    <link rel="stylesheet" href="/style_update.css">
+
+</head>
+<body>
+    <h1>write here to edit your content</h1>
+    <h3>id: <%=p.id%></h3>
+    <h3>@<%=p.name%></h3>
+
+    <form method="post" action="/posts/<%=p.id%>"  >
+        <textarea placeholder="wirte here to edit you content" name="content"></textarea>
+        <br><br>
+        <button>submit :)</button>
+
+    </form>
+</body>
+</html>
